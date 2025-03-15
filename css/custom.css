@@ -1,0 +1,309 @@
+/********** common setting **********/
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+#feature-last {
+    background: #00FFAD;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #00FFAD;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+
+
+.float{
+    position: fixed; 
+    z-index: 9999999999999999999; 
+    bottom: 0; 
+    right: 10px;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #banner h1 {
+      padding: 0 5rem;
+    }
+  }
+
+
+
+/****** manu *******/
+
+.manu a{
+    color: rgb(255, 214, 12);
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    float: left;
+    margin-right: 100px;
+    font-size:20px;
+
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top; /* or middle, bottom, as needed */
+    font-size: 100%;
+    background-size: cover;
+    cursor: pointer;
+    margin-left:100px;
+    left: 100px;
+    
+  }
+  
+  li:last-child {
+    margin-right: 0;
+  }
+  li a:hover{
+    color: red;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+  /*** background fullscrin ****/
+
+
+  .success-message {
+    color: green;
+    /* Add any other success styling here */
+}
+
+.error-message {
+    color: red;
+    /* Add any other error styling here */
+}
+  
+
+
+/*** resfonsive manu ******/
+.minimanu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: (10%);
+    background-color: rgba(255, 255, 255, 0.559);
+    box-shadow: -10px 0 10px black (0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.minimanu li{
+    width: 100%;
+}
+.minimanu a{
+    width: 100%;
+}
+
+.manu221{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideonMobile{
+        display: none;
+    }
+    .manu221{
+        display: block;
+        margin-left: -350px;
+    }
+}
+@media (max-width: 400px){
+    .minimanu{
+        width: 100px;
+    }
+    .manu221{
+        display: block;
+        margin-left: -350px;
+    
+    }
+}
+@media only screen and (max-width: 768px) {
+    .body html{
+      padding: 0 5rem;
+    }
+  }
+  @media only screen and (max-width: 368px) {
+    .body html {
+      padding: 0 5rem;
+    }
+  }
